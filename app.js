@@ -11,7 +11,8 @@ async function getGIF(){
     let button= document.querySelector('button')
     button.addEventListener('click', function(e) {e.preventDefault();
     let imagePost = document.querySelector('img')
-    url=response.data.data[0].images.looping.mp4
+    url=response.data.data[0].images.downsized.url
+    console.log(url)
     imagePost.setAttribute("src", url);
     console.log(imagePost)})}
    
